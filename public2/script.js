@@ -14,7 +14,7 @@ const upload = (file) => {
   ).then(
     success => {
       console.log(success)
-      document.getElementById('risk').innerText = `${success.score}%`;
+      document.getElementById('risk').innerText = `${success.score}`;
     } // Handle the success response object
   ).catch(
     error => console.log(error) // Handle the error response object

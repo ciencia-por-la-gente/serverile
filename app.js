@@ -1,6 +1,4 @@
 var express = require('express'),
-    routes = require('./routes'),
-    user = require('./routes/user'),
     http = require('http'),
     path = require('path'),
     fs = require('fs');
@@ -147,6 +145,9 @@ const theList = [
     "tourist destinations",
     "scholarships",
     "transports",
+    "shopping",
+    "society",
+    "sofas and chairs"
 ]
 
 const nluV1 = require('watson-developer-cloud/natural-language-understanding/v1');
