@@ -1,0 +1,11 @@
+---
+declared-services: 
+  guestbook-db:
+    label: cloudantNoSQLDB 
+    plan: Lite 
+applications:
+- name: sample-nodejs-cloudant
+  random-route: true
+  memory: 192M
+  services:
+  - guestbook-db
